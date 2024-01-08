@@ -37,3 +37,7 @@ keymap.set("n", ")", "$", opts)
 keymap.set("n", "a", "o", opts)
 keymap.set("n", "A", "O", opts)
 keymap.set("n", "o", "a", opts)
+
+-- Insert empty line without entering insert mode
+keymap.set("n", "<leader>O", ':<C-u>call append(line("."), repeat([""], v:count1))<CR>', opts)
+keymap.set("n", "<leader>o", ':<C-u>call append(line(".")-1, repeat([""], v:count1))<CR>', opts)
