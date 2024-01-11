@@ -17,6 +17,10 @@ keymap.set("n", "sj", "<C-w>j", opts)
 keymap.set("n", "sk", "<C-w>k", opts)
 keymap.set("n", "sl", "<C-w>l", opts)
 
+-- close window
+
+keymap.set("n", "q", ":q<Return>", opts)
+
 -- change window dimensions
 
 keymap.set("n", "<leader>h", ":vertical resize +5<Return>", opts)
