@@ -17,6 +17,12 @@ keymap.set("n", "sj", "<C-w>j", opts)
 keymap.set("n", "sk", "<C-w>k", opts)
 keymap.set("n", "sl", "<C-w>l", opts)
 
+-- change window dimensions
+
+keymap.set("n", "<leader>h", ":vertical resize +5<Return>", opts)
+keymap.set("n", "<leader>j", ":resize +5<Return>", opts)
+keymap.set("n", "<leader>k", ":resize -5<Return>", opts)
+
 -- open terminal
 
 keymap.set("n", "tt", ":term<Return> <BAR> i", opts)
@@ -24,10 +30,6 @@ keymap.set("n", "st", ":split<Return><C-w>10-", opts)
 
 -- line navigation
 keymap.set("n", "J", "5j", opts)
-keymap.set("n", "K", "5k", opts)
-
-keymap.set("n", "0", "w", opts)
-keymap.set("n", "9", "b", opts)
 
 keymap.set("n", "(", "^", opts)
 keymap.set("n", ")", "$", opts)
