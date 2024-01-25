@@ -23,7 +23,7 @@ keymap.set("n", "q", ":q<Return>", opts)
 
 -- change window dimensions
 
-keymap.set("n", "<leader>h", ":vertical resize +5<Return>", opts)
+keymap.set("n", "<leader>h", ":vertical resize +9<Return>", opts)
 keymap.set("n", "<leader>j", ":resize +5<Return>", opts)
 keymap.set("n", "<leader>k", ":resize -5<Return>", opts)
 
@@ -45,5 +45,6 @@ keymap.set("n", "A", "O", opts)
 keymap.set("n", "o", "a", opts)
 
 -- Insert empty line without entering insert mode
+
 keymap.set("n", "<leader>O", ':<C-u>call append(line("."), repeat([""], v:count1))<CR>', opts)
 keymap.set("n", "<leader>o", ':<C-u>call append(line(".")-1, repeat([""], v:count1))<CR>', opts)
